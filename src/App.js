@@ -1,12 +1,23 @@
-import React from 'react';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./components/Navbar/Home";
+// import About from './components/About';
+// import Contact from "./components/Contact";
+// import Services from "./components/Service";
 
-const App = () => {
+
+export default function App() {
   return (
     <>
-    <div>Hello Word</div>
-  </>
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        {/* <Route path="/about" element={<About/>}/> */}
+        {/* <Route path="/Contact" element={<Contact/>} /> */}
+        {/* <Route path="/service" element={<Services/>}/> */}
+      </Routes>
+      </BrowserRouter>
+  
+      </>
+      
   );
-};
-
-export default App;
-
+}
