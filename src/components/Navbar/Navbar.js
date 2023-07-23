@@ -1,35 +1,33 @@
-import './NavbarStyle.css'
-import { Navbaritem } from "./Navbaritem";
-import { useState } from "react";
+import React from 'react';
+import './Navbar.css';
 import { Link } from 'react-router-dom';
+import { Navbaritem } from './Navbaritem';
+import { LiaBarsSolid } from "react-icons/lia";
+
 const Navbar = () => {
-    const[clicked,setClicked]=useState(false);
-   const  handleClick=()=>{
-    setClicked(!clicked)
-    }
-    return (
-        <nav className="NavbarItems">
-            <h1 className="navbar-logo">Trippy</h1>
-
-
-            <div className="menu-icons" onClick={handleClick}>
-                <i className={clicked ?"fas fa-times":"fas fa-bars"}></i>
-            </div>
-            <ul className={clicked?"nav-menu active":"nav-menu"}>
-                {Navbaritem.map((item, i) => {
+  const NavbarLogo = process.env.PUBLIC_URL + "/Images/img/logo-color-1.svg"
+  return (
+    <div>
+      <div className='Bckgroundimage'>
+        <nav className="navbar">
+        <img className="logo-color" alt="Logo color" src={NavbarLogo} />
+          <div className="left-section">
+            {Navbaritem.map((item, i) => {
                     return (
-                        <li key={i}>
-                            <Link className={item.cName} to={item.url}>
-                                <i className={item.icon}></i>
+                        <div key={i} className={item.cName}>
+                            <Link to={item.url}>
                               {item.title}
                             </Link>
-                        </li>
+                        </div>
+                       
                     )
                 })}
-                <button className="button">Sign Up</button>
-
-            </ul>
+          </div>
+          <LiaBarsSolid className='menu-icon'/>
         </nav>
-    );
+      </div>
+    </div>
+  );
 };
+
 export default Navbar;

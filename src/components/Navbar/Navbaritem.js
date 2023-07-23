@@ -1,33 +1,36 @@
-export const Navbaritem=[
-    { 
-        title:"Home",
-        url:"/",
-        cName:"nav-links",
-        icon:"fa-solid fa-house-user"
-    },
-    { 
-        title:"About",
-        url:"/about",
-        cName:"nav-links",
-        icon:"fa-solid fa-circle-info"
-    },
-    { 
-        title:"Contact",
-        url:"/contact",
-        cName:"nav-links",
-        icon:"fa-solid fa-address-book"
-    },
-    { 
-        title:"Service",
-        url:"/service",
-        cName:"nav-links",
-        icon:"fa-solid fa-briefcase"
-    },
+export const Navbaritem = [
+    {
+        title: "Home",
+        cName: "nav-links",
+        url: "/",
 
-    { 
-        title:"Sign Up",
-        url:"/signup",
-        cName:"nav-links-mobile",
-    }
-    
-]
+
+    },
+    {
+        title: "Athlete Profile",
+        cName: "nav-links",
+        url: "/profile",
+
+
+    },
+    {
+        title: "Sports",
+        cName: "nav-links",
+        url: "/sports",
+
+
+    },
+    {
+        title: "News",
+        cName: "nav-links",
+        url: "/news",
+
+
+    },
+    {
+        title: "Upcoming Events",
+        cName: "nav-links",
+        url: "/events",
+
+
+    }]

@@ -1,0 +1,44 @@
+
+  .Background{
+    width: 124rem;
+    height: 80rem;
+  }
+  .heading{
+    color:#FFF;
+    font-size: 100px;
+    font-weight: 1000;
+    position: absolute; /* Position the content absolutely within the container */
+    top: 20%;  
+    left: 5%; 
+  
+  }
+  .paragraph{
+    color:#FFF;
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 1px;
+    top: 33%;
+    left: 3%; 
+  }
+  .parisImage{
+    position: absolute; /* Position the content absolutely within the container */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    height: 350px;
+    transform: translate(-250%, 10px); 
+    z-index: 1 ;
+  }
+   .JULY-AUGUST{
+    position: absolute;
+    color: #FFF;
+    top: 900px;
+    font-size: 40px;
+    padding-left: 13rem;
+   }
+   .PARIS-TEXT{
+    position: absolute;
+    color: #FFF;
+    top: 950px;
+    font-size: 90px;
+    padding-left: 13rem;
+   }
